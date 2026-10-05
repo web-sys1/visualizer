@@ -4,7 +4,9 @@
   "description": "FFMPEG like visualizer",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docker:build": "docker build -t visualizer-dev .",
+    "docker:run": "docker run --rm -p 8080:80 visualizer-dev"
   },
   "repository": {
     "type": "git",
